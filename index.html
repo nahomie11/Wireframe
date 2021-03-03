@@ -1,25 +1,27 @@
 <DOCTYPE html>
     <html lang="en">
-<title>
-    Wireframe
-</title>  
-<body>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
-</body>
+<head>
+<style>
 
-<style types="text/css">
+.item1 {grid-area:header;}
+.item2 {grid-area: slidebar 1;}
+.item3 {grid-area: slidebar 2;}
+.item4 {grid-area: main;}
+.item5 {grid-area: slidebar 1;}
+.item6 {grid-area: slidebar 2;}
+.item7 {grid-area: slidebar 1;}
+.item8 {grid-area: main;}
+.item9 {grid-area: footer;}
 
-h1.rect{
-    width: 1920px;
-    height: 593px;
-    margin-top: auto;}
-
-</style>
-
-<header>
-    <h1>
-        Header
-    </h1>
-</header>
-
+.grid-container {
+    display: grid;
+    grid-template-areas: header header header header
+    slidebar 1 slidebar 1 slidebaar 2 slidebar 2
+    main main main main main div
+    slide bar 1 slidebar2 slidebar
+    main main main main 
+    footer footer footer footer;
+    grid-gap: none
+    padding: 10px;}
+    </head>
+    </style>
