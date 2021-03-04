@@ -10,51 +10,44 @@
 
 <style>
 
-.item1{ grid-area: Header;}
-.item2{ grid-area: Slidebar 1;}
-.item3{ grid-area: Slidebar 2;}
-.item4{ grid-area: Main;}
-.item5{ grid-area: Div;}
-.item6{ grid-area: Slidebar 1;}
-.item7{ grid-area: Slidebar 2;}
-.item8{ grid-area: Slidebar 1;}
-.item9{ grid-area: Main;}
-.item10{ grid-area: Footer;}
+.demo{
+    color: rgb(255, 255, 255);}
 
-.grid-container {
-    display: grid;
-    grid-template-areas: 
-    Header Header Header Header Header
-    Slidebar 1 Slidebar 1 Slidebar 2 Slidebar 2
-    Main Main Main Main Main Div
-    Slidebar 1 Slidebar 2 Slidebar 1
-    Main Main Main Main Main
-    Footer Footer Footer Footer Footer;
-    grid-gap:0ch;}
+header.demo{
+    background-color: rgb(0, 147, 255);}
 
-.grid-container > div {
-    background-color: black;
-    text-align: center;
-    padding: 20px 0;
-    font-size: 30px;}
+aside.demo{
+    background-color:rgb(234, 172, 33);}
+
+main.demo{
+    background-color: rgb(101, 188, 181);}
+
+footer.demo{
+    background-color: rgb(0, 147, 255);}
+
+.grid{
+    display:grid;
+    grid-template-columns: 1fr 2fr;}
+
+    
+
+
 
 
 </style>
 </head>
 
-<body>
-<div class= "grid-container">
-    <div class= "item1">Header</div>
-    <div class= "item2">Slidebar 1</div>
-    <dic class= "item3">Slidebar 2</dic>
-    <div class= "item4">Main</div>
-    <div class= "item5">Div</div>
-    <div class= "item6">Slidebar 1</div>
-    <div class= "item7">Slidebar 2</div>
-    <div class= "item8">Slidebar 1</div>
-    <div class= "item9">Main</div>
-    <div class= "item10">Footer</div>
+<div class= "grid">
+    <header class="demo">Header</header>
+    <aside class="demo"> Sidebar 1</aside>
+    <aside class="demo"> Sidebar 2</aside>
+    <main class="demo">Main</main>
+    <div class="demo">Div</div>
+    <aside class= "demo">Sidebar 1</aside>
+    <main class= "demo">Sidebar 2</main>
+    <aside class= "demo">Sidebar 1</aside>
+    <footer class="demo">Footer</footer>
 </div>
-</body>
+
 </html>
  
