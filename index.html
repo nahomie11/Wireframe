@@ -16,16 +16,16 @@
 header.demo{
     background-color: rgb(0, 147, 255);}
 
-aside.demo{
+item-a{
     background-color:rgb(234, 172, 33);}
 
-aside.a{
+item-b{
     background-color: rgb(255, 226, 0);}  
 
 main.demo{
     background-color: rgb(101, 188, 181);}
 
-main.a{
+item-c{
     background-color: rgb(255, 226, 0);}
 
 footer.demo{
@@ -33,17 +33,47 @@ footer.demo{
 
 .grid{
     display:grid;
-    grid-template-columns: 1fr 2fr;}
+    grid-template-columns: 1fr 1fr 2fr;}
 
 header{
     grid-column-start: 1;
+    grid-column-end: 4;}
+
+item-a{
+    grid-column-start: 1;
+    grid-column-end: 2;}
+
+item-b{
+    grid-column-start: 2;
+    grid-column-end: 4;}
+
+main{
+    grid-column-start: 1;
     grid-column-end: 3;}
 
+div{
+    grid-column-start: 3;
+    grid-column-end: 4;}
 
+item-a{
+    grid-column-start: 1;
+    grid-column-end: 2;}
+ 
+item-b{
+    grid-column-start: 2;
+    grid-column-end: 3;}
 
-    
+item-a{
+    grid-column-start: 3;
+    grid-column-end: 4;}
 
+main{
+    grid-column-start: 1;
+    grid-column-end: 4;}
 
+footer{
+    grid-column-start: 1;
+    grid-column-end: 4;}
 
 
 </style>
@@ -51,13 +81,13 @@ header{
 
 <div class= "grid">
     <header class="demo">Header</header>
-    <aside class="demo"> Sidebar 1</aside>
-    <aside.a class="demo"> Sidebar 2</aside>
+    <item-a right class="demo"> Sidebar 1</aside>
+    <item-b class="demo"> Sidebar 2</aside>
     <main class="demo">Main</main>
     <div class="demo">Div</div>
     <aside class= "demo">Sidebar 1</aside>
-    <main.a class= "demo">Sidebar 2</main>
-    <aside class= "demo">Sidebar 1</aside>
+    <item-c class= "demo">Sidebar 2</main>
+    <iteam-a class= "demo">Sidebar 1</aside>
     <footer class="demo">Footer</footer>
 </div>
 
