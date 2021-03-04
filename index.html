@@ -1,27 +1,58 @@
 <DOCTYPE html>
     <html lang="en">
 <head>
+<body>
+    <link rel="preconnect"
+     href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+</body>
 <style>
 
-.item1 {grid-area:header;}
-.item2 {grid-area: slidebar 1;}
-.item3 {grid-area: slidebar 2;}
-.item4 {grid-area: main;}
-.item5 {grid-area: slidebar 1;}
-.item6 {grid-area: slidebar 2;}
-.item7 {grid-area: slidebar 1;}
-.item8 {grid-area: main;}
-.item9 {grid-area: footer;}
+
+.item1{ grid-area: Header;}
+.item2{ grid-area: Slidebar 1;}
+.item3{ grid-area: Slidebar 2;}
+.item4{ grid-area: Main;}
+.item5{ grid-area: Div;}
+.item6{ grid-area: Slidebar 1;}
+.item7{ grid-area: Slidebar 2;}
+.item8{ grid-area: Slidebar 1;}
+.item9{ grid-area: Main;}
+.item10{ grid-area: Footer;}
 
 .grid-container {
     display: grid;
-    grid-template-areas: header header header header
-    slidebar 1 slidebar 1 slidebaar 2 slidebar 2
-    main main main main main div
-    slide bar 1 slidebar2 slidebar
-    main main main main 
-    footer footer footer footer;
-    grid-gap: none
-    padding: 10px;}
-    </head>
-    </style>
+    grid-template-areas: 
+    Header Header Header Header Header
+    Slidebar 1 Slidebar 1 Slidebar 2 Slidebar 2
+    Main Main Main Main Main Div
+    Slidebar 1 Slidebar 2 Slidebar 1
+    Main Main Main Main Main
+    Footer Footer Footer Footer Footer;
+    grid-gap:0ch;}
+
+.grid-container > div {
+    background-color: black;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;}
+
+</style>
+</head>
+
+<body>
+<div class= "grid-container">
+    <div class= "item1">Header</div>
+    <div class= "item2">Slidebar 1</div>
+    <dic class= "item3">Slidebar 2</dic>
+    <div class= "item4">Main</div>
+    <div class= "item5">Div</div>
+    <div class= "item6">Slidebar 1</div>
+    <div class= "item7">Slidebar 2</div>
+    <div class= "item8">Slidebar 1</div>
+    <div class= "item9">Main</div>
+    <div class= "item10">Footer</div>
+</div>
+</body>
+</html>
+ 
